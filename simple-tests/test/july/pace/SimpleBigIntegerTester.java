@@ -29,4 +29,16 @@ public class SimpleBigIntegerTester extends TestCase {
         System.out.println(BigIntegerMath.log2(new BigInteger("3000"), RoundingMode.CEILING));
         System.out.println(0 | 1 << 2);
     }
+
+    public void testTry() {
+        try {
+            System.out.println("try");
+            return;
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("exception");
+        } finally {
+            System.out.println("finally");
+        }
+    }
 }

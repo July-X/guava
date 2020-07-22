@@ -140,6 +140,7 @@ public final class BigIntegerMath {
             new BigInteger("16a09e667f3bcc908b2fb1366ea957d3e3adec17512775099da2f590b0667322a", 16);
 
     /**
+     * 返回{@code x}的以10为底的对数，根据指定的舍入模式舍入<br/>
      * Returns the base-10 logarithm of {@code x}, rounded according to the specified rounding mode.
      *
      * @throws IllegalArgumentException if {@code x <= 0}
@@ -218,6 +219,7 @@ public final class BigIntegerMath {
     private static final double LN_2 = Math.log(2);
 
     /**
+     * 返回{@code x}的平方根，以指定的舍入模式舍入<br/>
      * Returns the square root of {@code x}, rounded with the specified rounding mode.
      *
      * @throws IllegalArgumentException if {@code x < 0}
@@ -463,6 +465,13 @@ public final class BigIntegerMath {
     }
 
     /**
+     * 计算二项式系数（在数学里，二项式系数，或组合数，是定义为形如(1 + x)ⁿ 展开后x的系数（其中n为自然数，k为整数）。从定义可看出二项式系数的值为整数。）
+     * <pre>
+     * https://baike.baidu.com/item/%E4%BA%8C%E9%A1%B9%E5%BC%8F%E7%B3%BB%E6%95%B0
+     *
+     * 一般二项式(x + y)ⁿ 的幂可用二项式系数记为 。广义二项式定理把这结果推广至负数或非整数次幂，此时右式则不再是多项式，而是无穷级数。
+     * </pre>
+     * <br/>
      * Returns {@code n} choose {@code k}, also known as the binomial coefficient of {@code n} and
      * {@code k}, that is, {@code n! / (k! (n - k)!)}.
      *
